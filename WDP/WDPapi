@@ -1,16 +1,14 @@
 print("Wireless Dialog Protocol v0.1 loading...")
-local modem =nil
+local modem = nil
 for k,v in pairs(redstone.getSides()) do
 	if peripheral.getType(v) == "modem" then
 		modem=peripheral.wrap(v)
 		print("Modem found on "..v.." side...")
-		modem.open()
-		print("modem opened ...")
 		break
 	end
 end
 
 if modem == nil then
 	print("ERROR : No modem found")
-	error
+	error("ERROR modem found")
 end
