@@ -9,6 +9,6 @@ for k,v in pairs(redstone.getSides()) do
 end
 
 if modem == nil then
-	print("ERROR : No modem found")
-	error("ERROR modem found")
+	--print("ERROR : No modem found")
+	error("ERROR modem not found")
 end
