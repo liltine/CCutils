@@ -5,7 +5,7 @@ for k,v in pairs(redstone.getSides()) do
 		modem=peripheral.wrap(v)
 		print("Modem found on "..v.." side...")
 		modem.open()
-		print("modem opened ..."
+		print("modem opened ...")
 		break
 	end
 end
