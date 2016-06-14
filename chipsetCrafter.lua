@@ -14,4 +14,8 @@ local function getStock(itemID)
 	return pipe.getItemAmount(ItemIDBuilder.build())
 end
 
-Request( 4, 1 )
+local ItemIDBuilder = pipe.getLP().getItemIdentifierBuilder()
+ItemIDBuilder.setItemID( 5380 )
+ItemIDBuilder.setItemData( 1 )
+IronChipset = ItemIDBuilder.build()
+pipe.makeRequest( IronChipset, 1 )
