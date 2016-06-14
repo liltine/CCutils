@@ -14,4 +14,4 @@ local function getStock(itemID)
 	return pipe.getItemAmount(ItemIDBuilder.build())
 end
 
-Request( "minecraft:stone", 1 )
+Request( 4, 1 )
