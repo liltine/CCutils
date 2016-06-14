@@ -1,4 +1,0 @@
-if(pcall(os.loadAPI("/WDP/WDPapi"))) then
-else
-print("errorcatch")
-end
