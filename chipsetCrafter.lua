@@ -18,4 +18,15 @@ local ItemIDBuilder = pipe.getLP().getItemIdentifierBuilder()
 ItemIDBuilder.setItemID( 5380 )
 ItemIDBuilder.setItemData( 1 )
 IronChipset = ItemIDBuilder.build()
-pipe.makeRequest( IronChipset, 1 )
+
+local ItemIDBuilder = pipe.getLP().getItemIdentifierBuilder()
+ItemIDBuilder.setItemID( 5380 )
+ItemIDBuilder.setItemData( 2 )
+GoldChipset = ItemIDBuilder.build()
+
+local ItemIDBuilder = pipe.getLP().getItemIdentifierBuilder()
+ItemIDBuilder.setItemID( 5380 )
+ItemIDBuilder.setItemData( 3 )
+DiamondChipset = ItemIDBuilder.build()
+
+pipe.makeRequest( DiamondChipset, 1 )
